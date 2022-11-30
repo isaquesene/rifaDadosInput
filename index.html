@@ -11,8 +11,8 @@
   <div class="container">
     <div class="rifa">
       <h3>RIFA</h3>
-      <h4>Rifa premiada no valor de 250,00</h4>
-      <li onclick="openModal()" name="um" value="1">1</li>
+      <h4 onclick="openModal()">Escolha seu número!</h4>
+      <li class="venda">1</li>
       <li>2</li>
       <li>3</li>
       <li>4</li>
@@ -75,9 +75,9 @@
           <label for="">Nome</label>
           <input type="text" id="nome" />
           <label for="">Número</label>
-          <p><span id="num"></span></p>
+          <input type="text" id="num">
           <button id="salvar" onclick="msg()" class="btnsalvar">Enviar</button>
-          <button onclick='history.go(-1)' class="btnvoltar">Voltar</button>
+          <!--<button onclick='history.go(-1)' class="btnvoltar">Voltar</button>-->
         </form>
       </div>
     </div>
@@ -85,7 +85,7 @@
   </div>
 
   <script src="js/script.js"></script>
-  <script src="js/num.js"></script>
+  <script src="js/msg.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>

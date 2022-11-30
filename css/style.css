@@ -19,12 +19,48 @@ h3{
 
 h4{
   font-family: 'Ubuntu',  sans-serif;
+  font-size: 20px;
   text-align: center;
   color: white;
   padding: 10px 50px;
   background: rgb(24, 116, 116) ;
   box-shadow: #187474 10px 10px 10px -10px;
   margin: 10px;
+  animation: label 6s linear infinite;
+}
+
+@keyframes label {
+  0%{
+    background-color: white;
+  }
+  25%{
+    background-color: rgb(24, 116, 116);
+  }
+  50%{
+    background-color: #187474;
+  }
+  75%{
+    background-color: #187470;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+
+.numeros{
+  display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   margin: 4px;
+   font-size: 30px;
+   font-weight: bold;
+   background-color: rgb(24, 116, 116);
+   cursor: pointer;
+   color: white;
 }
 
 .rifa{
@@ -44,6 +80,21 @@ h4{
    font-size: 30px;
    font-weight: bold;
    background-color: rgb(24, 116, 116);
+   cursor: pointer;
+   color: white;
+}
+
+.rifa .venda{
+  display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   margin: 4px;
+   font-size: 30px;
+   font-weight: bold;
+   background-color: red;
    cursor: pointer;
    color: white;
 }
@@ -171,7 +222,7 @@ span{
 
 @media(max-width: 500px){
   .modal{
-    width: 50% !important;
+    width: 30%;
   }
   .modal label {
     font-size: 12px !important;
